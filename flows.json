@@ -25,7 +25,7 @@
         "wires": [
             [
                 "aa01b68ab955e046",
-                "f48416d69a093717"
+                "e0b5173e40210e7f"
             ]
         ]
     },
@@ -42,11 +42,11 @@
         "chartType": "line",
         "legend": "false",
         "xformat": "HH:mm:ss",
-        "interpolate": "step",
+        "interpolate": "linear",
         "nodata": "",
         "dot": true,
         "ymin": "0",
-        "ymax": "150",
+        "ymax": "84",
         "removeOlder": 1,
         "removeOlderPoints": "",
         "removeOlderUnit": "3600",
@@ -67,8 +67,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 380,
-        "y": 60,
+        "x": 420,
+        "y": 120,
         "wires": [
             []
         ]
@@ -86,11 +86,11 @@
         "chartType": "line",
         "legend": "false",
         "xformat": "HH:mm:ss",
-        "interpolate": "step",
+        "interpolate": "linear",
         "nodata": "",
         "dot": true,
         "ymin": "0",
-        "ymax": "150",
+        "ymax": "84",
         "removeOlder": 1,
         "removeOlderPoints": "",
         "removeOlderUnit": "3600",
@@ -111,8 +111,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 840,
-        "y": 60,
+        "x": 440,
+        "y": 500,
         "wires": [
             []
         ]
@@ -130,11 +130,11 @@
         "chartType": "line",
         "legend": "false",
         "xformat": "HH:mm:ss",
-        "interpolate": "step",
+        "interpolate": "linear",
         "nodata": "",
         "dot": true,
         "ymin": "0",
-        "ymax": "150",
+        "ymax": "84",
         "removeOlder": 1,
         "removeOlderPoints": "",
         "removeOlderUnit": "3600",
@@ -155,8 +155,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1300,
-        "y": 60,
+        "x": 460,
+        "y": 800,
         "wires": [
             []
         ]
@@ -174,12 +174,11 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 560,
-        "y": 120,
+        "x": 120,
+        "y": 500,
         "wires": [
             [
-                "6ca4314d3d4c189a",
-                "1f3cb8506df89cb1"
+                "6ca4314d3d4c189a"
             ]
         ]
     },
@@ -196,8 +195,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 1000,
-        "y": 120,
+        "x": 120,
+        "y": 800,
         "wires": [
             [
                 "6ba5aa337179b570"
@@ -218,143 +217,12 @@
         "rh": 0,
         "inputs": 0,
         "x": 90,
-        "y": 260,
+        "y": 180,
         "wires": [
             [
-                "6d548da029f3dffc"
+                "e0b5173e40210e7f",
+                "149c4b3e38a7633b"
             ]
-        ]
-    },
-    {
-        "id": "6d548da029f3dffc",
-        "type": "ui_chart",
-        "z": "e976ef3354d1d575",
-        "name": "",
-        "group": "f03723e926e93156",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "label": "Peso",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "step",
-        "nodata": "",
-        "dot": true,
-        "ymin": "0",
-        "ymax": "150",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 290,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "9fafb324f2b1cc20",
-        "type": "ui_chart",
-        "z": "e976ef3354d1d575",
-        "name": "",
-        "group": "3b3f9798139c0ca7",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "label": "Peso",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "step",
-        "nodata": "",
-        "dot": true,
-        "ymin": "0",
-        "ymax": "150",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 730,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0863e3e41fb6b586",
-        "type": "ui_chart",
-        "z": "e976ef3354d1d575",
-        "name": "",
-        "group": "284acb4591012c1c",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "label": "Peso",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "step",
-        "nodata": "",
-        "dot": true,
-        "ymin": "0",
-        "ymax": "150",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 1190,
-        "y": 240,
-        "wires": [
-            []
         ]
     },
     {
@@ -370,11 +238,11 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 550,
-        "y": 240,
+        "x": 110,
+        "y": 580,
         "wires": [
             [
-                "9fafb324f2b1cc20"
+                "4d25373f69d21d9a"
             ]
         ]
     },
@@ -391,206 +259,11 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 990,
-        "y": 240,
+        "x": 110,
+        "y": 880,
         "wires": [
             [
-                "0863e3e41fb6b586"
-            ]
-        ]
-    },
-    {
-        "id": "363a3c013d8c6515",
-        "type": "mqtt in",
-        "z": "e976ef3354d1d575",
-        "name": "",
-        "topic": "tacho1/RSSI",
-        "qos": "0",
-        "datatype": "auto-detect",
-        "broker": "851592e9ed59b8d3",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 90,
-        "y": 340,
-        "wires": [
-            [
-                "b1692baf066199d8"
-            ]
-        ]
-    },
-    {
-        "id": "b1692baf066199d8",
-        "type": "ui_chart",
-        "z": "e976ef3354d1d575",
-        "name": "",
-        "group": "f03723e926e93156",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "label": "RSSI",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "step",
-        "nodata": "",
-        "dot": true,
-        "ymin": "0",
-        "ymax": "150",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 290,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e2182ed90e09522f",
-        "type": "ui_chart",
-        "z": "e976ef3354d1d575",
-        "name": "",
-        "group": "3b3f9798139c0ca7",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "label": "RSSI",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "step",
-        "nodata": "",
-        "dot": true,
-        "ymin": "0",
-        "ymax": "150",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 730,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b0f936b0638d394f",
-        "type": "ui_chart",
-        "z": "e976ef3354d1d575",
-        "name": "",
-        "group": "284acb4591012c1c",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "label": "RSSI",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "step",
-        "nodata": "",
-        "dot": true,
-        "ymin": "0",
-        "ymax": "150",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 1190,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "dd5f63644871a1c2",
-        "type": "mqtt in",
-        "z": "e976ef3354d1d575",
-        "name": "",
-        "topic": "tacho2/RSSI",
-        "qos": "0",
-        "datatype": "auto-detect",
-        "broker": "851592e9ed59b8d3",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 550,
-        "y": 320,
-        "wires": [
-            [
-                "e2182ed90e09522f"
-            ]
-        ]
-    },
-    {
-        "id": "cf1b9afe89903e9b",
-        "type": "mqtt in",
-        "z": "e976ef3354d1d575",
-        "name": "",
-        "topic": "tacho3/RSSI",
-        "qos": "0",
-        "datatype": "auto-detect",
-        "broker": "851592e9ed59b8d3",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 990,
-        "y": 320,
-        "wires": [
-            [
-                "b0f936b0638d394f"
+                "7f999eec08fde83b"
             ]
         ]
     },
@@ -604,11 +277,11 @@
         "width": 0,
         "height": 0,
         "gtype": "gage",
-        "title": "gauge",
-        "label": "units",
+        "title": "Peso",
+        "label": "kg",
         "format": "{{value}}",
         "min": "0",
-        "max": "150",
+        "max": "20",
         "colors": [
             "#00b500",
             "#e6e600",
@@ -618,24 +291,24 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 370,
-        "y": 160,
+        "x": 430,
+        "y": 180,
         "wires": []
     },
     {
         "id": "aa01b68ab955e046",
         "type": "range",
         "z": "e976ef3354d1d575",
-        "minin": "150",
+        "minin": "84",
         "maxin": "0",
         "minout": "0",
-        "maxout": "150",
+        "maxout": "84",
         "action": "scale",
         "round": false,
         "property": "payload",
         "name": "",
-        "x": 220,
-        "y": 60,
+        "x": 270,
+        "y": 120,
         "wires": [
             [
                 "8ed98209782172e1"
@@ -643,39 +316,19 @@
         ]
     },
     {
-        "id": "f48416d69a093717",
-        "type": "range",
-        "z": "e976ef3354d1d575",
-        "minin": "150",
-        "maxin": "0",
-        "minout": "0",
-        "maxout": "150",
-        "action": "scale",
-        "round": false,
-        "property": "payload",
-        "name": "",
-        "x": 220,
-        "y": 160,
-        "wires": [
-            [
-                "149c4b3e38a7633b"
-            ]
-        ]
-    },
-    {
         "id": "6ca4314d3d4c189a",
         "type": "range",
         "z": "e976ef3354d1d575",
-        "minin": "150",
+        "minin": "84",
         "maxin": "0",
         "minout": "0",
-        "maxout": "150",
+        "maxout": "84",
         "action": "scale",
         "round": false,
         "property": "payload",
         "name": "",
-        "x": 680,
-        "y": 60,
+        "x": 290,
+        "y": 500,
         "wires": [
             [
                 "e4c48b4bc901fe3f"
@@ -683,67 +336,19 @@
         ]
     },
     {
-        "id": "1f3cb8506df89cb1",
-        "type": "range",
-        "z": "e976ef3354d1d575",
-        "minin": "150",
-        "maxin": "0",
-        "minout": "0",
-        "maxout": "150",
-        "action": "scale",
-        "round": false,
-        "property": "payload",
-        "name": "",
-        "x": 700,
-        "y": 160,
-        "wires": [
-            [
-                "dd0b6abfccce1b39"
-            ]
-        ]
-    },
-    {
-        "id": "dd0b6abfccce1b39",
-        "type": "ui_gauge",
-        "z": "e976ef3354d1d575",
-        "name": "",
-        "group": "3b3f9798139c0ca7",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "gtype": "gage",
-        "title": "gauge",
-        "label": "units",
-        "format": "{{value}}",
-        "min": "0",
-        "max": "150",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "seg1": "",
-        "seg2": "",
-        "diff": false,
-        "className": "",
-        "x": 850,
-        "y": 160,
-        "wires": []
-    },
-    {
         "id": "6ba5aa337179b570",
         "type": "range",
         "z": "e976ef3354d1d575",
-        "minin": "150",
+        "minin": "84",
         "maxin": "0",
         "minout": "0",
-        "maxout": "150",
+        "maxout": "84",
         "action": "scale",
         "round": false,
         "property": "payload",
         "name": "",
-        "x": 1140,
-        "y": 60,
+        "x": 290,
+        "y": 800,
         "wires": [
             [
                 "0e6ad6b8c9c50389"
@@ -760,11 +365,11 @@
         "width": 0,
         "height": 0,
         "gtype": "gage",
-        "title": "gauge",
-        "label": "units",
+        "title": "Peso",
+        "label": "kg",
         "format": "{{value}}",
         "min": "0",
-        "max": "150",
+        "max": "84",
         "colors": [
             "#00b500",
             "#e6e600",
@@ -774,29 +379,177 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 1290,
-        "y": 160,
+        "x": 290,
+        "y": 880,
         "wires": []
     },
     {
-        "id": "c3ad292a1f9f9c93",
-        "type": "range",
+        "id": "e0b5173e40210e7f",
+        "type": "join",
         "z": "e976ef3354d1d575",
-        "minin": "150",
-        "maxin": "0",
-        "minout": "0",
-        "maxout": "150",
-        "action": "scale",
-        "round": false,
-        "property": "payload",
         "name": "",
-        "x": 1140,
-        "y": 160,
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 270,
+        "y": 280,
         "wires": [
             [
-                "7f999eec08fde83b"
+                "8093a225f9d8f42e",
+                "cf2d9fcbc36cc1a7"
             ]
         ]
+    },
+    {
+        "id": "965ea743b4e0fc1a",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "8093a225f9d8f42e",
+        "type": "change",
+        "z": "e976ef3354d1d575",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "tacho1",
+                "tot": "str"
+            },
+            {
+                "t": "move",
+                "p": "payload[\"tacho1/distancia\"]",
+                "pt": "msg",
+                "to": "distancia",
+                "tot": "msg"
+            },
+            {
+                "t": "move",
+                "p": "payload[\"tacho1/peso\"]",
+                "pt": "msg",
+                "to": "peso",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "qos",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "retain",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "_msgid",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 280,
+        "wires": [
+            [
+                "965ea743b4e0fc1a",
+                "5c2686bc5dcea804"
+            ]
+        ]
+    },
+    {
+        "id": "5c2686bc5dcea804",
+        "type": "mongodb out",
+        "z": "e976ef3354d1d575",
+        "mongodb": "55c8524c95b88225",
+        "name": "",
+        "collection": "datos_de_sensores",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "insert",
+        "x": 740,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4d25373f69d21d9a",
+        "type": "ui_gauge",
+        "z": "e976ef3354d1d575",
+        "name": "",
+        "group": "3b3f9798139c0ca7",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Peso",
+        "label": "kg",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "20",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 290,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "cf2d9fcbc36cc1a7",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 340,
+        "wires": []
     },
     {
         "id": "851592e9ed59b8d3",
@@ -859,10 +612,20 @@
         "className": ""
     },
     {
+        "id": "55c8524c95b88225",
+        "type": "mongodb",
+        "hostname": "127.0.0.1",
+        "topology": "direct",
+        "connectOptions": "",
+        "port": "27017",
+        "db": "medicionesDB",
+        "name": ""
+    },
+    {
         "id": "8f540dd87179faaa",
         "type": "ui_tab",
         "name": "Tachos",
-        "icon": "microchip",
+        "icon": "fa-dashboard",
         "order": 2,
         "disabled": false,
         "hidden": false
