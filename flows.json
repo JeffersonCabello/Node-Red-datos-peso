@@ -156,7 +156,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 460,
-        "y": 800,
+        "y": 960,
         "wires": [
             []
         ]
@@ -178,7 +178,8 @@
         "y": 500,
         "wires": [
             [
-                "6ca4314d3d4c189a"
+                "6ca4314d3d4c189a",
+                "2f048c9b8609b64d"
             ]
         ]
     },
@@ -196,10 +197,11 @@
         "rh": 0,
         "inputs": 0,
         "x": 120,
-        "y": 800,
+        "y": 960,
         "wires": [
             [
-                "6ba5aa337179b570"
+                "6ba5aa337179b570",
+                "2a3628132ed71257"
             ]
         ]
     },
@@ -242,7 +244,8 @@
         "y": 580,
         "wires": [
             [
-                "4d25373f69d21d9a"
+                "4d25373f69d21d9a",
+                "2f048c9b8609b64d"
             ]
         ]
     },
@@ -260,10 +263,11 @@
         "rh": 0,
         "inputs": 0,
         "x": 110,
-        "y": 880,
+        "y": 1040,
         "wires": [
             [
-                "7f999eec08fde83b"
+                "7f999eec08fde83b",
+                "2a3628132ed71257"
             ]
         ]
     },
@@ -348,7 +352,7 @@
         "property": "payload",
         "name": "",
         "x": 290,
-        "y": 800,
+        "y": 960,
         "wires": [
             [
                 "0e6ad6b8c9c50389"
@@ -380,7 +384,7 @@
         "diff": false,
         "className": "",
         "x": 290,
-        "y": 880,
+        "y": 1040,
         "wires": []
     },
     {
@@ -458,6 +462,11 @@
             },
             {
                 "t": "delete",
+                "p": "_msgid",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
                 "p": "qos",
                 "pt": "msg"
             },
@@ -468,13 +477,15 @@
             },
             {
                 "t": "delete",
-                "p": "_msgid",
+                "p": "payload",
                 "pt": "msg"
             },
             {
-                "t": "delete",
-                "p": "payload",
-                "pt": "msg"
+                "t": "set",
+                "p": "timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
             }
         ],
         "action": "",
@@ -487,7 +498,7 @@
         "wires": [
             [
                 "965ea743b4e0fc1a",
-                "5c2686bc5dcea804"
+                "dfcc777f8a1edb77"
             ]
         ]
     },
@@ -497,13 +508,13 @@
         "z": "e976ef3354d1d575",
         "mongodb": "55c8524c95b88225",
         "name": "",
-        "collection": "datos_de_sensores",
+        "collection": "tacho1",
         "payonly": false,
         "upsert": false,
         "multi": false,
         "operation": "insert",
-        "x": 740,
-        "y": 340,
+        "x": 900,
+        "y": 280,
         "wires": []
     },
     {
@@ -549,6 +560,411 @@
         "statusType": "auto",
         "x": 440,
         "y": 340,
+        "wires": []
+    },
+    {
+        "id": "dfcc777f8a1edb77",
+        "type": "function",
+        "z": "e976ef3354d1d575",
+        "name": "fechaISO",
+        "func": "msg.timestamp = new Date(msg.timestamp);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 280,
+        "wires": [
+            [
+                "b7e0f4cee1b92c7e",
+                "5c2686bc5dcea804"
+            ]
+        ]
+    },
+    {
+        "id": "b7e0f4cee1b92c7e",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "2f048c9b8609b64d",
+        "type": "join",
+        "z": "e976ef3354d1d575",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 290,
+        "y": 660,
+        "wires": [
+            [
+                "b187affb17d87b01",
+                "077f0d67b7d2d6b0"
+            ]
+        ]
+    },
+    {
+        "id": "3be8a6b852b604c9",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "b187affb17d87b01",
+        "type": "change",
+        "z": "e976ef3354d1d575",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "tacho2",
+                "tot": "str"
+            },
+            {
+                "t": "move",
+                "p": "payload[\"tacho2/distancia\"]",
+                "pt": "msg",
+                "to": "distancia",
+                "tot": "msg"
+            },
+            {
+                "t": "move",
+                "p": "payload[\"tacho2/peso\"]",
+                "pt": "msg",
+                "to": "peso",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "_msgid",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "qos",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "retain",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 660,
+        "wires": [
+            [
+                "3be8a6b852b604c9",
+                "c647976485970e97"
+            ]
+        ]
+    },
+    {
+        "id": "82ade91ff90567d7",
+        "type": "mongodb out",
+        "z": "e976ef3354d1d575",
+        "mongodb": "55c8524c95b88225",
+        "name": "",
+        "collection": "tacho2",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "insert",
+        "x": 920,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "077f0d67b7d2d6b0",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "c647976485970e97",
+        "type": "function",
+        "z": "e976ef3354d1d575",
+        "name": "fechaISO",
+        "func": "msg.timestamp = new Date(msg.timestamp);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 660,
+        "wires": [
+            [
+                "a1b2e68b39d42c0a",
+                "82ade91ff90567d7"
+            ]
+        ]
+    },
+    {
+        "id": "a1b2e68b39d42c0a",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "2a3628132ed71257",
+        "type": "join",
+        "z": "e976ef3354d1d575",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 290,
+        "y": 1120,
+        "wires": [
+            [
+                "05c14164f2c5a936",
+                "e39594e55ec96011"
+            ]
+        ]
+    },
+    {
+        "id": "1c1cb66d67f04e11",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "05c14164f2c5a936",
+        "type": "change",
+        "z": "e976ef3354d1d575",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "tacho3",
+                "tot": "str"
+            },
+            {
+                "t": "move",
+                "p": "payload[\"tacho3/distancia\"]",
+                "pt": "msg",
+                "to": "distancia",
+                "tot": "msg"
+            },
+            {
+                "t": "move",
+                "p": "payload[\"tacho3/peso\"]",
+                "pt": "msg",
+                "to": "peso",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "_msgid",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "qos",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "retain",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 1120,
+        "wires": [
+            [
+                "1c1cb66d67f04e11",
+                "d3b64c3b90ebb7fe"
+            ]
+        ]
+    },
+    {
+        "id": "7236c8efec1c9030",
+        "type": "mongodb out",
+        "z": "e976ef3354d1d575",
+        "mongodb": "55c8524c95b88225",
+        "name": "",
+        "collection": "tacho3",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "insert",
+        "x": 920,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "e39594e55ec96011",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "d3b64c3b90ebb7fe",
+        "type": "function",
+        "z": "e976ef3354d1d575",
+        "name": "fechaISO",
+        "func": "msg.timestamp = new Date(msg.timestamp);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 1120,
+        "wires": [
+            [
+                "c0385de62efc18a5",
+                "7236c8efec1c9030"
+            ]
+        ]
+    },
+    {
+        "id": "c0385de62efc18a5",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 1200,
         "wires": []
     },
     {
