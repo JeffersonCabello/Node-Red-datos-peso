@@ -25,7 +25,7 @@
         "wires": [
             [
                 "aa01b68ab955e046",
-                "e0b5173e40210e7f"
+                "7ad13d7a5dd87cd8"
             ]
         ]
     },
@@ -112,7 +112,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 440,
-        "y": 500,
+        "y": 720,
         "wires": [
             []
         ]
@@ -156,7 +156,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 460,
-        "y": 960,
+        "y": 1140,
         "wires": [
             []
         ]
@@ -175,11 +175,11 @@
         "rh": 0,
         "inputs": 0,
         "x": 120,
-        "y": 500,
+        "y": 720,
         "wires": [
             [
                 "6ca4314d3d4c189a",
-                "2f048c9b8609b64d"
+                "9ab051a9ce2ecdf1"
             ]
         ]
     },
@@ -197,11 +197,11 @@
         "rh": 0,
         "inputs": 0,
         "x": 120,
-        "y": 960,
+        "y": 1140,
         "wires": [
             [
                 "6ba5aa337179b570",
-                "2a3628132ed71257"
+                "cbdd5032ae9a252d"
             ]
         ]
     },
@@ -223,7 +223,8 @@
         "wires": [
             [
                 "e0b5173e40210e7f",
-                "149c4b3e38a7633b"
+                "149c4b3e38a7633b",
+                "cd92f0790b7ab81b"
             ]
         ]
     },
@@ -241,11 +242,12 @@
         "rh": 0,
         "inputs": 0,
         "x": 110,
-        "y": 580,
+        "y": 780,
         "wires": [
             [
                 "4d25373f69d21d9a",
-                "2f048c9b8609b64d"
+                "2f048c9b8609b64d",
+                "30c976cdf86b596a"
             ]
         ]
     },
@@ -263,11 +265,12 @@
         "rh": 0,
         "inputs": 0,
         "x": 110,
-        "y": 1040,
+        "y": 1200,
         "wires": [
             [
                 "7f999eec08fde83b",
-                "2a3628132ed71257"
+                "2a3628132ed71257",
+                "358bf084df5c0b47"
             ]
         ]
     },
@@ -315,7 +318,8 @@
         "y": 120,
         "wires": [
             [
-                "8ed98209782172e1"
+                "8ed98209782172e1",
+                "e0b5173e40210e7f"
             ]
         ]
     },
@@ -332,10 +336,11 @@
         "property": "payload",
         "name": "",
         "x": 290,
-        "y": 500,
+        "y": 720,
         "wires": [
             [
-                "e4c48b4bc901fe3f"
+                "e4c48b4bc901fe3f",
+                "2f048c9b8609b64d"
             ]
         ]
     },
@@ -352,10 +357,11 @@
         "property": "payload",
         "name": "",
         "x": 290,
-        "y": 960,
+        "y": 1140,
         "wires": [
             [
-                "0e6ad6b8c9c50389"
+                "0e6ad6b8c9c50389",
+                "2a3628132ed71257"
             ]
         ]
     },
@@ -383,8 +389,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 290,
-        "y": 1040,
+        "x": 470,
+        "y": 1200,
         "wires": []
     },
     {
@@ -430,7 +436,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 620,
-        "y": 220,
+        "y": 340,
         "wires": []
     },
     {
@@ -541,8 +547,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 290,
-        "y": 580,
+        "x": 450,
+        "y": 780,
         "wires": []
     },
     {
@@ -596,7 +602,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 820,
-        "y": 360,
+        "y": 340,
         "wires": []
     },
     {
@@ -620,7 +626,7 @@
         "reduceInitType": "num",
         "reduceFixup": "",
         "x": 290,
-        "y": 660,
+        "y": 860,
         "wires": [
             [
                 "b187affb17d87b01",
@@ -642,7 +648,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 640,
-        "y": 600,
+        "y": 920,
         "wires": []
     },
     {
@@ -706,7 +712,7 @@
         "to": "",
         "reg": false,
         "x": 460,
-        "y": 660,
+        "y": 860,
         "wires": [
             [
                 "3be8a6b852b604c9",
@@ -726,7 +732,7 @@
         "multi": false,
         "operation": "insert",
         "x": 920,
-        "y": 660,
+        "y": 860,
         "wires": []
     },
     {
@@ -743,7 +749,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 460,
-        "y": 720,
+        "y": 920,
         "wires": []
     },
     {
@@ -758,7 +764,7 @@
         "finalize": "",
         "libs": [],
         "x": 640,
-        "y": 660,
+        "y": 860,
         "wires": [
             [
                 "a1b2e68b39d42c0a",
@@ -780,7 +786,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 840,
-        "y": 740,
+        "y": 920,
         "wires": []
     },
     {
@@ -804,7 +810,7 @@
         "reduceInitType": "num",
         "reduceFixup": "",
         "x": 290,
-        "y": 1120,
+        "y": 1280,
         "wires": [
             [
                 "05c14164f2c5a936",
@@ -826,7 +832,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 640,
-        "y": 1060,
+        "y": 1340,
         "wires": []
     },
     {
@@ -890,7 +896,7 @@
         "to": "",
         "reg": false,
         "x": 460,
-        "y": 1120,
+        "y": 1280,
         "wires": [
             [
                 "1c1cb66d67f04e11",
@@ -910,7 +916,7 @@
         "multi": false,
         "operation": "insert",
         "x": 920,
-        "y": 1120,
+        "y": 1280,
         "wires": []
     },
     {
@@ -927,7 +933,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 460,
-        "y": 1180,
+        "y": 1340,
         "wires": []
     },
     {
@@ -942,7 +948,7 @@
         "finalize": "",
         "libs": [],
         "x": 640,
-        "y": 1120,
+        "y": 1280,
         "wires": [
             [
                 "c0385de62efc18a5",
@@ -964,7 +970,318 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 840,
-        "y": 1200,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "e0a5829668d108e2",
+        "type": "mongodb in",
+        "z": "e976ef3354d1d575",
+        "mongodb": "55c8524c95b88225",
+        "name": "cuenta-medidas",
+        "collection": "tacho1",
+        "operation": "find",
+        "x": 520,
+        "y": 440,
+        "wires": [
+            [
+                "f73d9636f8f9184d"
+            ]
+        ]
+    },
+    {
+        "id": "f73d9636f8f9184d",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "6a8d94e8b81de454",
+        "type": "function",
+        "z": "e976ef3354d1d575",
+        "name": "query",
+        "func": "msg.sort = {\n    timestamp:-1\n}\nmsg.limit = 1\nmsg.payload = \"\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 440,
+        "wires": [
+            [
+                "e0a5829668d108e2",
+                "d1693566a0f2af2c"
+            ]
+        ]
+    },
+    {
+        "id": "d1693566a0f2af2c",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "2dc8b926acc45563",
+        "type": "inject",
+        "z": "e976ef3354d1d575",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 440,
+        "wires": [
+            [
+                "6a8d94e8b81de454"
+            ]
+        ]
+    },
+    {
+        "id": "03c9731c1813d7a2",
+        "type": "e-mail",
+        "z": "e976ef3354d1d575",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "alertadebasura@gmail.com",
+        "dname": "",
+        "x": 740,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "7ad13d7a5dd87cd8",
+        "type": "function",
+        "z": "e976ef3354d1d575",
+        "name": "alerta distancia tacho 1",
+        "func": "const distancia_maxima = 84*0.2;\nif (msg.payload<= distancia_maxima) {\n    msg.topic = \"Vaciar el tacho 1, está al límite\";\n    msg.payload = \"Faltan \" + msg.payload + \" cm para que se llene el tacho.\";\n    delete msg.qos;\n    delete msg.retain;\n    delete msg._msgid;\n    return msg;   \n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 80,
+        "wires": [
+            [
+                "03c9731c1813d7a2"
+            ]
+        ]
+    },
+    {
+        "id": "6cf171864d963246",
+        "type": "e-mail",
+        "z": "e976ef3354d1d575",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "alertadebasura@gmail.com",
+        "dname": "",
+        "x": 700,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "cd92f0790b7ab81b",
+        "type": "function",
+        "z": "e976ef3354d1d575",
+        "name": "alerta peso tacho 1",
+        "func": "const peso_maximo = 20;\nif (msg.payload>= peso_maximo) {\n    msg.topic = \"Vaciar el tacho 1, tiene mucho peso\";\n    msg.payload = \"Hay \" + msg.payload + \" kg de basura dentro del tacho.\";\n    delete msg.qos;\n    delete msg.retain;\n    delete msg._msgid;\n    return msg;   \n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 220,
+        "wires": [
+            [
+                "6cf171864d963246"
+            ]
+        ]
+    },
+    {
+        "id": "9ab051a9ce2ecdf1",
+        "type": "function",
+        "z": "e976ef3354d1d575",
+        "name": "alerta distancia tacho 2",
+        "func": "const distancia_maxima = 84*0.2;\nif (msg.payload<= distancia_maxima) {\n    msg.topic = \"Vaciar el tacho 2, está al límite\";\n    msg.payload = \"Faltan \" + msg.payload + \" cm para que se llene el tacho.\";\n    delete msg.qos;\n    delete msg.retain;\n    delete msg._msgid;\n    return msg;   \n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 680,
+        "wires": [
+            [
+                "d35a6b2cc7f2a0b9"
+            ]
+        ]
+    },
+    {
+        "id": "d35a6b2cc7f2a0b9",
+        "type": "e-mail",
+        "z": "e976ef3354d1d575",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "alertadebasura@gmail.com",
+        "dname": "",
+        "x": 760,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "30c976cdf86b596a",
+        "type": "function",
+        "z": "e976ef3354d1d575",
+        "name": "alerta peso tacho 2",
+        "func": "const peso_maximo = 20;\nif (msg.payload>= peso_maximo) {\n    msg.topic = \"Vaciar el tacho 2, tiene mucho peso\";\n    msg.payload = \"Hay \" + msg.payload + \" kg de basura dentro del tacho.\";\n    delete msg.qos;\n    delete msg.retain;\n    delete msg._msgid;\n    return msg;   \n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 820,
+        "wires": [
+            [
+                "7273c83f99bd8230"
+            ]
+        ]
+    },
+    {
+        "id": "7273c83f99bd8230",
+        "type": "e-mail",
+        "z": "e976ef3354d1d575",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "alertadebasura@gmail.com",
+        "dname": "",
+        "x": 720,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "cbdd5032ae9a252d",
+        "type": "function",
+        "z": "e976ef3354d1d575",
+        "name": "alerta distancia tacho 3",
+        "func": "const distancia_maxima = 84*0.2;\nif (msg.payload<= distancia_maxima) {\n    msg.topic = \"Vaciar el tacho 3, está al límite\";\n    msg.payload = \"Faltan \" + msg.payload + \" cm para que se llene el tacho.\";\n    delete msg.qos;\n    delete msg.retain;\n    delete msg._msgid;\n    return msg;   \n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 1100,
+        "wires": [
+            [
+                "a5d36b4649bf2fb2"
+            ]
+        ]
+    },
+    {
+        "id": "a5d36b4649bf2fb2",
+        "type": "e-mail",
+        "z": "e976ef3354d1d575",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "alertadebasura@gmail.com",
+        "dname": "",
+        "x": 780,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "358bf084df5c0b47",
+        "type": "function",
+        "z": "e976ef3354d1d575",
+        "name": "alerta peso tacho 3",
+        "func": "const peso_maximo = 20;\nif (msg.payload>= peso_maximo) {\n    msg.topic = \"Vaciar el tacho 3, tiene mucho peso\";\n    msg.payload = \"Hay \" + msg.payload + \" kg de basura dentro del tacho.\";\n    delete msg.qos;\n    delete msg.retain;\n    delete msg._msgid;\n    return msg;   \n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 1240,
+        "wires": [
+            [
+                "d7a0fefbc5e08db9"
+            ]
+        ]
+    },
+    {
+        "id": "d7a0fefbc5e08db9",
+        "type": "e-mail",
+        "z": "e976ef3354d1d575",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "alertadebasura@gmail.com",
+        "dname": "",
+        "x": 740,
+        "y": 1240,
         "wires": []
     },
     {
