@@ -9,6 +9,7 @@ services:
       - 1880:1880
 
   mongodb:
+    container_name: mongodb
     image: mongo:6-jammy
     restart: always
     ports:
@@ -17,6 +18,7 @@ services:
       - C:\dbdata6:/data/db
 
   mosquitto:
+        container_name: mosquittomqtt
         image: eclipse-mosquitto:2
         restart: always
         ports:
