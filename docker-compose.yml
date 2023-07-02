@@ -7,15 +7,16 @@ services:
     restart: always
     ports:
       - 1880:1880
+    links:
+      - mongodb
+      
 
   mongodb:
     container_name: mongodb
-    image: mongo:6-jammy
+    image: mongo
     restart: always
     ports:
-      - '27017:27017'
-    volumes:
-      - C:\dbdata6:/data/db
+      - 27017:27017
 
   mosquitto:
         container_name: mosquittomqtt
