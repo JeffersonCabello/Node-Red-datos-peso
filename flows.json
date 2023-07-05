@@ -155,8 +155,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 460,
-        "y": 1140,
+        "x": 480,
+        "y": 1280,
         "wires": [
             []
         ]
@@ -196,8 +196,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 120,
-        "y": 1140,
+        "x": 140,
+        "y": 1280,
         "wires": [
             [
                 "6ba5aa337179b570",
@@ -264,8 +264,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 110,
-        "y": 1200,
+        "x": 130,
+        "y": 1340,
         "wires": [
             [
                 "7f999eec08fde83b",
@@ -356,8 +356,8 @@
         "round": false,
         "property": "payload",
         "name": "",
-        "x": 290,
-        "y": 1140,
+        "x": 310,
+        "y": 1280,
         "wires": [
             [
                 "0e6ad6b8c9c50389",
@@ -389,8 +389,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 470,
-        "y": 1200,
+        "x": 490,
+        "y": 1340,
         "wires": []
     },
     {
@@ -504,7 +504,7 @@
         "wires": [
             [
                 "965ea743b4e0fc1a",
-                "dfcc777f8a1edb77"
+                "5c2686bc5dcea804"
             ]
         ]
     },
@@ -514,12 +514,12 @@
         "z": "e976ef3354d1d575",
         "mongodb": "55c8524c95b88225",
         "name": "",
-        "collection": "tacho1",
+        "collection": "tacho_1",
         "payonly": false,
         "upsert": false,
         "multi": false,
         "operation": "insert",
-        "x": 900,
+        "x": 720,
         "y": 280,
         "wires": []
     },
@@ -565,43 +565,6 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 440,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "dfcc777f8a1edb77",
-        "type": "function",
-        "z": "e976ef3354d1d575",
-        "name": "fechaISO",
-        "func": "msg.timestamp = new Date(msg.timestamp);\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 620,
-        "y": 280,
-        "wires": [
-            [
-                "b7e0f4cee1b92c7e",
-                "5c2686bc5dcea804"
-            ]
-        ]
-    },
-    {
-        "id": "b7e0f4cee1b92c7e",
-        "type": "debug",
-        "z": "e976ef3354d1d575",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 820,
         "y": 340,
         "wires": []
     },
@@ -716,7 +679,7 @@
         "wires": [
             [
                 "3be8a6b852b604c9",
-                "c647976485970e97"
+                "82ade91ff90567d7"
             ]
         ]
     },
@@ -726,12 +689,12 @@
         "z": "e976ef3354d1d575",
         "mongodb": "55c8524c95b88225",
         "name": "",
-        "collection": "tacho2",
+        "collection": "tacho_2",
         "payonly": false,
         "upsert": false,
         "multi": false,
         "operation": "insert",
-        "x": 920,
+        "x": 740,
         "y": 860,
         "wires": []
     },
@@ -749,43 +712,6 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 460,
-        "y": 920,
-        "wires": []
-    },
-    {
-        "id": "c647976485970e97",
-        "type": "function",
-        "z": "e976ef3354d1d575",
-        "name": "fechaISO",
-        "func": "msg.timestamp = new Date(msg.timestamp);\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 640,
-        "y": 860,
-        "wires": [
-            [
-                "a1b2e68b39d42c0a",
-                "82ade91ff90567d7"
-            ]
-        ]
-    },
-    {
-        "id": "a1b2e68b39d42c0a",
-        "type": "debug",
-        "z": "e976ef3354d1d575",
-        "name": "debug 9",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 840,
         "y": 920,
         "wires": []
     },
@@ -809,8 +735,8 @@
         "reduceInit": "",
         "reduceInitType": "num",
         "reduceFixup": "",
-        "x": 290,
-        "y": 1280,
+        "x": 310,
+        "y": 1420,
         "wires": [
             [
                 "05c14164f2c5a936",
@@ -831,8 +757,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 640,
-        "y": 1340,
+        "x": 660,
+        "y": 1480,
         "wires": []
     },
     {
@@ -895,12 +821,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 460,
-        "y": 1280,
+        "x": 480,
+        "y": 1420,
         "wires": [
             [
                 "1c1cb66d67f04e11",
-                "d3b64c3b90ebb7fe"
+                "7236c8efec1c9030"
             ]
         ]
     },
@@ -910,13 +836,13 @@
         "z": "e976ef3354d1d575",
         "mongodb": "55c8524c95b88225",
         "name": "",
-        "collection": "tacho3",
+        "collection": "tacho_3",
         "payonly": false,
         "upsert": false,
         "multi": false,
         "operation": "insert",
-        "x": 920,
-        "y": 1280,
+        "x": 780,
+        "y": 1420,
         "wires": []
     },
     {
@@ -932,45 +858,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 460,
-        "y": 1340,
-        "wires": []
-    },
-    {
-        "id": "d3b64c3b90ebb7fe",
-        "type": "function",
-        "z": "e976ef3354d1d575",
-        "name": "fechaISO",
-        "func": "msg.timestamp = new Date(msg.timestamp);\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 640,
-        "y": 1280,
-        "wires": [
-            [
-                "c0385de62efc18a5",
-                "7236c8efec1c9030"
-            ]
-        ]
-    },
-    {
-        "id": "c0385de62efc18a5",
-        "type": "debug",
-        "z": "e976ef3354d1d575",
-        "name": "debug 12",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 840,
-        "y": 1340,
+        "x": 480,
+        "y": 1480,
         "wires": []
     },
     {
@@ -978,14 +867,16 @@
         "type": "mongodb in",
         "z": "e976ef3354d1d575",
         "mongodb": "55c8524c95b88225",
-        "name": "cuenta-medidas",
-        "collection": "tacho1",
+        "name": "",
+        "collection": "tacho_1",
         "operation": "find",
-        "x": 520,
+        "x": 500,
         "y": 440,
         "wires": [
             [
-                "f73d9636f8f9184d"
+                "f73d9636f8f9184d",
+                "da8666d912647418",
+                "7a7bb44384ab7875"
             ]
         ]
     },
@@ -1002,27 +893,27 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 720,
-        "y": 440,
+        "x": 740,
+        "y": 400,
         "wires": []
     },
     {
         "id": "6a8d94e8b81de454",
         "type": "function",
         "z": "e976ef3354d1d575",
-        "name": "query",
-        "func": "msg.sort = {\n    timestamp:-1\n}\nmsg.limit = 1\nmsg.payload = \"\";\nreturn msg;",
+        "name": "last N",
+        "func": "msg.sort = {\n    timestamp:-1\n}\nmsg.limit = msg.payload;\nmsg.payload = \"\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
+        "x": 250,
         "y": 440,
         "wires": [
             [
-                "e0a5829668d108e2",
-                "d1693566a0f2af2c"
+                "d1693566a0f2af2c",
+                "e0a5829668d108e2"
             ]
         ]
     },
@@ -1039,34 +930,9 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 520,
+        "x": 400,
         "y": 500,
         "wires": []
-    },
-    {
-        "id": "2dc8b926acc45563",
-        "type": "inject",
-        "z": "e976ef3354d1d575",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 140,
-        "y": 440,
-        "wires": [
-            [
-                "6a8d94e8b81de454"
-            ]
-        ]
     },
     {
         "id": "03c9731c1813d7a2",
@@ -1223,8 +1089,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 510,
-        "y": 1100,
+        "x": 530,
+        "y": 1240,
         "wires": [
             [
                 "a5d36b4649bf2fb2"
@@ -1244,8 +1110,8 @@
         "tls": true,
         "name": "alertadebasura@gmail.com",
         "dname": "",
-        "x": 780,
-        "y": 1100,
+        "x": 800,
+        "y": 1240,
         "wires": []
     },
     {
@@ -1259,8 +1125,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
-        "y": 1240,
+        "x": 510,
+        "y": 1380,
         "wires": [
             [
                 "d7a0fefbc5e08db9"
@@ -1280,9 +1146,816 @@
         "tls": true,
         "name": "alertadebasura@gmail.com",
         "dname": "",
-        "x": 740,
-        "y": 1240,
+        "x": 760,
+        "y": 1380,
         "wires": []
+    },
+    {
+        "id": "be82b4da6acb1954",
+        "type": "ui_chart",
+        "z": "e976ef3354d1d575",
+        "name": "",
+        "group": "982b82db70692d8e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Llenado",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5b4050653f1880f9",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "da8666d912647418",
+        "type": "change",
+        "z": "e976ef3354d1d575",
+        "name": "distancia",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[{\t    'series':[''],\t    'labels':[''],\t    'data':[\t        [payload.{'x':timestamp,'y':distancia}]\t        ]\t}]",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 440,
+        "wires": [
+            [
+                "5b4050653f1880f9",
+                "be82b4da6acb1954"
+            ]
+        ]
+    },
+    {
+        "id": "605272920f9b3215",
+        "type": "mongodb in",
+        "z": "e976ef3354d1d575",
+        "mongodb": "55c8524c95b88225",
+        "name": "",
+        "collection": "tacho_2",
+        "operation": "find",
+        "x": 520,
+        "y": 1000,
+        "wires": [
+            [
+                "e33a8dc972ab6413",
+                "9b3fa5686e9986c6",
+                "f510ff162ed820af"
+            ]
+        ]
+    },
+    {
+        "id": "e33a8dc972ab6413",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 17",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "d0694cabd764b195",
+        "type": "function",
+        "z": "e976ef3354d1d575",
+        "name": "last N",
+        "func": "msg.sort = {\n    timestamp:-1\n}\nmsg.limit = msg.payload;\nmsg.payload = \"\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 1000,
+        "wires": [
+            [
+                "6d9f5759ae478a4b",
+                "605272920f9b3215"
+            ]
+        ]
+    },
+    {
+        "id": "6d9f5759ae478a4b",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 18",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "07bcf19ad912ffc0",
+        "type": "ui_chart",
+        "z": "e976ef3354d1d575",
+        "name": "",
+        "group": "35239883f4b62348",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Llenado",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0e1cdd460c59850",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 19",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "9b3fa5686e9986c6",
+        "type": "change",
+        "z": "e976ef3354d1d575",
+        "name": "distancia",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[{\t    'series':[''],\t    'labels':[''],\t    'data':[\t        [payload.{'x':timestamp,'y':distancia}]\t        ]\t}]",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 1000,
+        "wires": [
+            [
+                "c0e1cdd460c59850",
+                "07bcf19ad912ffc0"
+            ]
+        ]
+    },
+    {
+        "id": "f510ff162ed820af",
+        "type": "change",
+        "z": "e976ef3354d1d575",
+        "name": "peso",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[{\t    'series':[''],\t    'labels':[''],\t    'data':[\t        [payload.{'x':timestamp,'y':peso}]\t        ]\t}]",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 1040,
+        "wires": [
+            [
+                "5bc11a2b566df10f",
+                "08404f86791ab128"
+            ]
+        ]
+    },
+    {
+        "id": "5bc11a2b566df10f",
+        "type": "ui_chart",
+        "z": "e976ef3354d1d575",
+        "name": "",
+        "group": "35239883f4b62348",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Peso",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "08404f86791ab128",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 23",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "84134fa55928c1a2",
+        "type": "mongodb in",
+        "z": "e976ef3354d1d575",
+        "mongodb": "55c8524c95b88225",
+        "name": "",
+        "collection": "tacho_3",
+        "operation": "find",
+        "x": 540,
+        "y": 1560,
+        "wires": [
+            [
+                "6ae23e05e7e532b3",
+                "3714c63e55f8cadd",
+                "8ff2c48ac4a86280"
+            ]
+        ]
+    },
+    {
+        "id": "6ae23e05e7e532b3",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 20",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "aea2862d4d485b25",
+        "type": "function",
+        "z": "e976ef3354d1d575",
+        "name": "last N",
+        "func": "msg.sort = {\n    timestamp:-1\n}\nmsg.limit = msg.payload;\nmsg.payload = \"\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 1560,
+        "wires": [
+            [
+                "84134fa55928c1a2",
+                "9b7b67937aaebe7b"
+            ]
+        ]
+    },
+    {
+        "id": "9b7b67937aaebe7b",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 21",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "cd2917d09dc0f574",
+        "type": "ui_chart",
+        "z": "e976ef3354d1d575",
+        "name": "",
+        "group": "1312a753e7a604bb",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Llenado",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 980,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cac339f265d3d7c3",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 22",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "3714c63e55f8cadd",
+        "type": "change",
+        "z": "e976ef3354d1d575",
+        "name": "distancia",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[{\t    'series':[''],\t    'labels':[''],\t    'data':[\t        [payload.{'x':timestamp,'y':distancia}]\t        ]\t}]",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 1560,
+        "wires": [
+            [
+                "cd2917d09dc0f574",
+                "cac339f265d3d7c3"
+            ]
+        ]
+    },
+    {
+        "id": "7a7bb44384ab7875",
+        "type": "change",
+        "z": "e976ef3354d1d575",
+        "name": "peso",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[{\t    'series':[''],\t    'labels':[''],\t    'data':[\t        [payload.{'x':timestamp,'y':peso}]\t        ]\t}]",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 480,
+        "wires": [
+            [
+                "e2b11aff53a5802e",
+                "1629c6d8ba8bb3e2"
+            ]
+        ]
+    },
+    {
+        "id": "e2b11aff53a5802e",
+        "type": "ui_chart",
+        "z": "e976ef3354d1d575",
+        "name": "",
+        "group": "982b82db70692d8e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Peso",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 930,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1629c6d8ba8bb3e2",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 24",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "8ff2c48ac4a86280",
+        "type": "change",
+        "z": "e976ef3354d1d575",
+        "name": "peso",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[{\t    'series':[''],\t    'labels':[''],\t    'data':[\t        [payload.{'x':timestamp,'y':peso}]\t        ]\t}]",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 1600,
+        "wires": [
+            [
+                "83e0cce258bf60c6",
+                "02575fe46a2868e0"
+            ]
+        ]
+    },
+    {
+        "id": "83e0cce258bf60c6",
+        "type": "ui_chart",
+        "z": "e976ef3354d1d575",
+        "name": "",
+        "group": "1312a753e7a604bb",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Peso",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 1600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "02575fe46a2868e0",
+        "type": "debug",
+        "z": "e976ef3354d1d575",
+        "name": "debug 25",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "554185b116af2213",
+        "type": "ui_dropdown",
+        "z": "e976ef3354d1d575",
+        "name": "",
+        "label": "Últimos",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "982b82db70692d8e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "10",
+                "value": 10,
+                "type": "num"
+            },
+            {
+                "label": "20",
+                "value": 20,
+                "type": "num"
+            },
+            {
+                "label": "30",
+                "value": 30,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 100,
+        "y": 440,
+        "wires": [
+            [
+                "6a8d94e8b81de454"
+            ]
+        ]
+    },
+    {
+        "id": "a9f3fe984ba554e1",
+        "type": "ui_dropdown",
+        "z": "e976ef3354d1d575",
+        "name": "",
+        "label": "Últimos",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "35239883f4b62348",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "10",
+                "value": 10,
+                "type": "num"
+            },
+            {
+                "label": "20",
+                "value": 20,
+                "type": "num"
+            },
+            {
+                "label": "30",
+                "value": 30,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 120,
+        "y": 1000,
+        "wires": [
+            [
+                "d0694cabd764b195"
+            ]
+        ]
+    },
+    {
+        "id": "e519af2a8ce1d1db",
+        "type": "ui_dropdown",
+        "z": "e976ef3354d1d575",
+        "name": "",
+        "label": "Últimos",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "1312a753e7a604bb",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "10",
+                "value": 10,
+                "type": "num"
+            },
+            {
+                "label": "20",
+                "value": 20,
+                "type": "num"
+            },
+            {
+                "label": "30",
+                "value": 30,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 120,
+        "y": 1560,
+        "wires": [
+            [
+                "aea2862d4d485b25"
+            ]
+        ]
     },
     {
         "id": "851592e9ed59b8d3",
@@ -1355,10 +2028,52 @@
         "name": ""
     },
     {
+        "id": "982b82db70692d8e",
+        "type": "ui_group",
+        "name": "Tacho 1",
+        "tab": "cf524327713914db",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "35239883f4b62348",
+        "type": "ui_group",
+        "name": "Tacho 2",
+        "tab": "cf524327713914db",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1312a753e7a604bb",
+        "type": "ui_group",
+        "name": "Tacho 3",
+        "tab": "cf524327713914db",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
         "id": "8f540dd87179faaa",
         "type": "ui_tab",
         "name": "Tachos",
         "icon": "fa-dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "cf524327713914db",
+        "type": "ui_tab",
+        "name": "Historial",
+        "icon": "fa-history",
         "order": 2,
         "disabled": false,
         "hidden": false
