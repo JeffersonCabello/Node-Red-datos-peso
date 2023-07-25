@@ -1,0 +1,37 @@
+version: "3.8"
+services:
+
+  nodered:
+    container_name: Node-red
+    image: nodered/node-red:latest 
+    restart: always
+    ports:
+      - 1880:1880
+    links:
+      - mongodb
+      
+
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+
+  mosquitto:
+        container_name: mosquittomqtt
+        image: eclipse-mosquitto:2
+        restart: always
+        ports:
+            - 1883:1883
+            - 8883:8883
+            - 9001:9001
+        volumes:
+            - ./mosquitto/config:/mosquitto/config
+            - ./mosquitto/data:/mosquitto/data
+        networks:
+            - mosquitto
+networks:
+    mosquitto:
+        name: mosquitto
+        driver: bridge
