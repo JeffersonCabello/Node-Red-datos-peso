@@ -24,11 +24,9 @@ services:
         restart: always
         ports:
             - 1883:1883
-            - 8883:8883
-            - 9001:9001
         volumes:
-            - ./mosquitto/config:/mosquitto/config
-            - ./mosquitto/data:/mosquitto/data
+            - C:\mosquitto\config:/mosquitto/config
+            - C:\mosquitto\data:/mosquitto/data
         networks:
             - mosquitto
 networks:
